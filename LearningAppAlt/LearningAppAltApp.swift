@@ -12,6 +12,7 @@ struct LearningAppAltApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(ContentModel())
         }
     }
 }
