@@ -40,17 +40,6 @@ struct ContentView: View {
                 .filter({ model.searchText.isEmpty ? true : $0.title.localizedCaseInsensitiveContains(model.searchText) })
         }
     }
-    
-//    func filterLessons(_ searchText:String) -> [Lesson] {
-//        var filteredLessons = [Lesson]()
-//        for l in model.lessons {
-//            print(l)
-//            if l.title.contains(searchText) {
-//                filteredLessons.append(l)
-//            }
-//        }
-//        return filteredLessons
-//    }
 }
 
 struct ContentView_Previews: PreviewProvider {
